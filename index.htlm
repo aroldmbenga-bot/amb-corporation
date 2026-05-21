@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMB Corporation Invest - Innover · Investir · Transformer</title>
+    <meta name="description" content="AMB Corporation Invest : Solutions durables en Transport, Éducation, Conseil et Investissement au Congo-Brazzaville.">
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        body {font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #1a1a1a;}
+        .container {max-width: 1200px; margin: 0 auto; padding: 0 20px;}
+        header {background: #0A2342; color: white; padding: 20px 0; position: sticky; top: 0; z-index: 100;}
+        .nav {display: flex; justify-content: space-between; align-items: center;}
+        .logo {font-size: 28px; font-weight: 700;}
+        .logo span {color: #D4AF37;}
+        nav a {color: white; text-decoration: none; margin-left: 25px; font-weight: 500;}
+        .cta-btn {background: #D4AF37; color: #0A2342; padding: 12px 24px; border-radius: 5px; font-weight: 700; border: none; cursor: pointer; text-decoration: none; display: inline-block;}
+        .hero {background: linear-gradient(135deg, #0A2342 0%, #1e3a5f 100%); color: white; padding: 100px 0; text-align: center;}
+        .hero h1 {font-size: 48px; margin-bottom: 10px;}
+        .hero h1 span {color: #D4AF37;}
+        .tagline {font-size: 20px; color: #D4AF37; margin-bottom: 20px; letter-spacing: 2px;}
+        .hero p {font-size: 18px; max-width: 700px; margin: 0 auto 30px;}
+        .services {padding: 80px 0; background: #f8f9fa;}
+        .section-title {text-align: center; font-size: 36px; margin-bottom: 50px; color: #0A2342;}
+        .grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;}
+        .card {background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); border-top: 4px solid #D4AF37;}
+        .card h3 {color: #0A2342; margin-bottom: 15px; font-size: 22px;}
+        .engagement {padding: 80px 0; background: #0A2342; color: white;}
+        .engagement .card {background: rgba(255,255,255,0.05); border: 1px solid #D4AF37;}
+        .engagement h3 {color: #D4AF37;}
+        .contact {padding: 80px 0;}
+        .contact-box {background: #f8f9fa; padding: 40px; border-radius: 10px; max-width: 600px; margin: 0 auto;}
+        form {display: flex; flex-direction: column; gap: 15px; text-align: left;}
+        input, textarea {padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 16px; font-family: inherit;}
+        textarea {min-height: 120px; resize: vertical;}
+        .ambition {background: #D4AF37; color: #0A2342; padding: 40px 0; text-align: center; font-weight: 700; font-size: 20px;}
+        footer {background: #0A2342; color: white; text-align: center; padding: 30px 0;}
+        @media (max-width: 768px) {.hero h1 {font-size: 32px;} nav {display: none;}}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container nav">
+            <div class="logo">AMB <span>Corporation Invest</span></div>
+            <nav>
+                <a href="#services">Services</a>
+                <a href="#contact" class="cta-btn">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="tagline">INNOVER · INVESTIR · TRANSFORMER</div>
+            <h1>Votre partenaire de confiance pour des <span>solutions durables et performantes</span></h1>
+            <p>Cabinet de conseil et d’investissement spécialisé Transport & Éducation en République du Congo</p>
+            <a href="#contact" class="cta-btn">Confiez-nous votre projet</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Nos Services</h2>
+            <div class="grid">
+                <div class="card"><h3>TRANSPORT</h3><p>Gestion d’opérations, logistique, optimisation de flotte et conseil stratégique.</p></div>
+                <div class="card"><h3>ÉDUCATION</h3><p>Soutien pédagogique, ingénierie de formation, accompagnement des établissements.</p></div>
+                <div class="card"><h3>CONSEIL & STRATÉGIE</h3><p>Études de projets, stratégies de développement, accompagnement entrepreneurs.</p></div>
+                <div class="card"><h3>INVESTISSEMENT</h3><p>Identification d’opportunités, montage de projets, partenariats stratégiques.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="engagement">
+        <div class="container">
+            <h2 class="section-title" style="color:white">Notre Engagement</h2>
+            <div class="grid">
+                <div class="card"><h3>Qualité</h3><p>Services sur mesure à forte valeur ajoutée.</p></div>
+                <div class="card"><h3>Intégrité</h3><p>Transparence, éthique et professionnalisme.</p></div>
+                <div class="card"><h3>Impact</h3><p>Contribuer à un avenir meilleur au Congo.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="ambition">
+        <div class="container">AMBITION · MOBILISATION · BÂTIR L’AVENIR</div>
+    </div>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contactez-nous</h2>
+            <div class="contact-box">
+                <form name="contact" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact">
+                    <input type="text" name="nom" placeholder="Votre nom complet" required>
+                    <input type="email" name="email" placeholder="Votre email" required>
+                    <input type="tel" name="telephone" placeholder="Votre téléphone / WhatsApp" required>
+                    <textarea name="message" placeholder="Décrivez votre projet..." required></textarea>
+                    <button type="submit" class="cta-btn">Envoyer le message</button>
+                </form>
+                <p style="margin-top:20px;"><strong>Tel :</strong> 06 978 72 35 | <strong>Email :</strong> aroldmbenga@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 AMB Corporation Invest - République du Congo Brazzaville</p>
+        </div>
+    </footer>
+</body>
+</html>
